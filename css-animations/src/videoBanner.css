@@ -1,0 +1,34 @@
+.bannerVideo {
+    margin: 5% 0%;
+    padding: 5% 3%;
+    min-height: 300px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-among;
+}
+.bannerVideo-video{
+    height: 112%;
+    min-height: 20vw;
+    width: 112%;
+}
+.bannerVideo-text {
+    padding: 5% 12%;
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.bannerVideo-video.stuck {
+    position: fixed;
+    bottom: 60%;
+    left: 65%;
+    width: 30vw;
+    height: auto;
+    transform: translateY(100%);
+    animation: face-in-up 0.75s ease forwards;
+    z-index: 1;
+}
+
